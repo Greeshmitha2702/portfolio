@@ -47,14 +47,13 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function Skills() {
-  const [activeTab, setActiveTab] = useState<'all' | 'frontend' | 'backend' | 'devops' | 'creative' | 'core' | 'database'>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'frontend' | 'backend' | 'devops' | 'core' | 'database'>('all');
 
   const categories = [
     { id: 'all', label: 'All Technologies' },
     { id: 'frontend', label: 'Front-End Development' },
     { id: 'backend', label: 'Back-End & APIs' },
-    { id: 'devops', label: 'DevOps & Infrastructure' },
-    { id: 'creative', label: 'Creative & Systems' },
+    { id: 'devops', label: 'cloud & DevOps' },
     { id: 'core', label: 'Core Programming' },
     { id: 'database', label: 'Database Management' },
   ];
@@ -68,7 +67,6 @@ export default function Skills() {
       case 'frontend': return { border: 'group-hover:border-[#8B5CF6]/40', icon: 'text-[#8B5CF6]', bg: 'bg-[#8B5CF6]/5' };
       case 'backend': return { border: 'group-hover:border-[#3B82F6]/40', icon: 'text-[#3B82F6]', bg: 'bg-[#3B82F6]/5' };
       case 'devops': return { border: 'group-hover:border-purple-500/40', icon: 'text-[#A855F7]', bg: 'bg-purple-500/5' };
-      case 'creative': return { border: 'group-hover:border-blue-500/40', icon: 'text-blue-400', bg: 'bg-blue-500/5' };
       case 'core': return { border: 'group-hover:border-green-500/40', icon: 'text-green-400', bg: 'bg-green-500/5' };
       case 'database': return { border: 'group-hover:border-yellow-500/40', icon: 'text-yellow-400', bg: 'bg-yellow-500/5' };
       default: return { border: 'group-hover:border-[#8B5CF6]/40', icon: 'text-[#8B5CF6]', bg: 'bg-[#8B5CF6]/5' };

@@ -15,16 +15,6 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#8B5CF6]"
-          >
-            <span className="w-8 h-[1px] bg-[#8B5CF6]" />
-            <span>01 . Introduction</span>
-          </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +23,7 @@ export default function About() {
             className="text-3xl sm:text-5xl font-sans font-black tracking-tight text-white"
             id="about-heading"
           >
-            Crafting Systems & Experience<span className="text-[#8B5CF6]">.</span>
+            Introduction
           </motion.h2>
         </div>
 
@@ -63,15 +53,14 @@ export default function About() {
                 </div>
                 <div className="flex items-center gap-1.5 text-[10px] font-mono text-white/45 uppercase tracking-widest font-bold">
                   <Terminal className="w-3 h-3 text-[#8B5CF6]" />
-                  alex_morgan_portrait.sh
+                  greeshmitha_portrait.sh
                 </div>
               </div>
 
               {/* Workstation photo container */}
               <div className="relative aspect-[4/5] bg-[#1a1a1e] overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
-                  alt="Alex Morgan - Senior Developer portrait"
+                <img src="public/Greeshmitha.jpg"
+                  alt="Greeshmitha - Full Stack developer portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale brightness-90 contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                 />
@@ -80,11 +69,10 @@ export default function About() {
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-sm bg-[#0B1120]/85 backdrop-blur-md border border-white/10 text-xs text-white/95">
                   <div className="flex items-center gap-2 font-mono font-bold text-[#8B5CF6] mb-1 uppercase tracking-wider">
                     <Award className="w-3.5 h-3.5" />
-                    <span>Focus Area: High Performance</span>
+                    <span>Focus Area: Full Stack & Backend Development</span>
                   </div>
                   <p className="text-[#94A3B8] font-sans">
-                    Blending modern WebGL animation engines with type-safe distributed database infrastructures.
-                  </p>
+  Building scalable web applications with clean frontend experiences, efficient backend systems, and modern development practices.                  </p>
                 </div>
               </div>
             </div>

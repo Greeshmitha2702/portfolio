@@ -38,9 +38,7 @@ export const SKILLS_DATA = [
   { name: 'Render Deployment', category: 'devops', iconName: 'ExternalLink' },
   { name: 'API Integration', category: 'devops', iconName: 'CheckCircle' },
 
-  { name: 'Problem Solving', category: 'creative', iconName: 'Eye' },
-  { name: 'Agile Collaboration', category: 'creative', iconName: 'Users' },
-
+  { name: 'Problem Solving', category: 'core', iconName: 'Eye' },
   {name: 'C, Java, Python, SQL', category: 'core', iconName: 'Terminal' }
 ];
 
