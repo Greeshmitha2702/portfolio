@@ -23,16 +23,6 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#8B5CF6]"
-          >
-            <span className="w-8 h-[1px] bg-[#8B5CF6]" />
-            <span>03 . Portfolio</span>
-          </motion.div>
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <div>
@@ -44,11 +34,8 @@ export default function Projects() {
                 className="text-3xl sm:text-5xl font-sans font-black tracking-tight text-white mb-3"
                 id="projects-heading"
               >
-                Cinematic Showcase<span className="text-[#8B5CF6]">.</span>
+                Featured Projects
               </motion.h2>
-              <p className="text-[#94A3B8] font-sans max-w-xl text-sm leading-relaxed">
-                Handpicked selection of high-fidelity productions, illustrating solutions to complex scalability, micro-layout design, and full-stack software optimizations.
-              </p>
             </div>
 
             {/* Selector filter */}
@@ -152,29 +139,46 @@ export default function Projects() {
 
                   {/* Operational Web Link Buttons */}
                   <div className="flex gap-3 mt-auto">
-                    {/* Github repo button */}
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2.5 bg-white/5 hover:bg-white/10 text-white/90 rounded-sm text-xs font-mono font-bold uppercase transition-all duration-300 border border-white/10 flex items-center justify-center gap-2"
-                      id={`project-btn-git-${project.id}`}
-                    >
-                      <Github className="w-4 h-4" />
-                      Code Repository
-                    </a>
+                    {project.githubUrl ? (
+  <a
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 px-4 py-2.5 bg-white/5 hover:bg-white/10 text-white/90 rounded-sm text-xs font-mono font-bold uppercase transition-all duration-300 border border-white/10 flex items-center justify-center gap-2"
+    id={`project-btn-git-${project.id}`}
+  >
+    <Github className="w-4 h-4" />
+    Code Repository
+  </a>
+) : (
+  <div
+    className="flex-1 px-4 py-2.5 bg-[#1e293b] text-[#94A3B8] rounded-sm text-xs font-mono font-bold uppercase border border-white/5 flex items-center justify-center gap-2 cursor-not-allowed"
+  >
+    <Github className="w-4 h-4" />
+    Under Progress
+  </div>
+)}
 
                     {/* Production live demo button */}
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 px-4 py-2.5 bg-[#8B5CF6] hover:bg-[#A855F7] text-white rounded-sm text-xs font-mono font-bold uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#8B5CF6]/10 cursor-pointer"
-                      id={`project-btn-live-${project.id}`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Launch Demo
-                    </a>
+                    {project.liveUrl ? (
+  <a
+    href={project.liveUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 px-4 py-2.5 bg-[#8B5CF6] hover:bg-[#A855F7] text-white rounded-sm text-xs font-mono font-bold uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#8B5CF6]/10 cursor-pointer"
+    id={`project-btn-live-${project.id}`}
+  >
+    <ExternalLink className="w-4 h-4" />
+    Launch Demo
+  </a>
+) : (
+  <div
+    className="flex-1 px-4 py-2.5 bg-[#1e293b] text-[#94A3B8] rounded-sm text-xs font-mono font-bold uppercase flex items-center justify-center gap-2 cursor-not-allowed border border-white/5"
+  >
+    <ExternalLink className="w-4 h-4" />
+    No Live Demo
+  </div>
+)}
                   </div>
                 </div>
               </motion.div>

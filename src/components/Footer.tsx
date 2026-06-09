@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="text-[#94A3B8] font-sans text-xs flex items-center gap-1.5">
           <span>Created with</span>
           <Heart className="w-3 h-3 text-[#8B5CF6] fill-[#8B5CF6] animate-pulse" />
-          <span>using React & Tailwind CSS. © {currentYear} Alex Morgan.</span>
+          <span>using React & Tailwind CSS. © {currentYear} Greeshmitha.</span>
         </div>
 
         {/* Right Back to Top arrow */}

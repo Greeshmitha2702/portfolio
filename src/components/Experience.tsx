@@ -15,16 +15,6 @@ export default function Experience() {
       <div className="max-w-5xl mx-auto">
         {/* Section title */}
         <div className="mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#8B5CF6]"
-          >
-            <span className="w-8 h-[1px] bg-[#8B5CF6]" />
-            <span>04 . Career</span>
-          </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +23,7 @@ export default function Experience() {
             className="text-3xl sm:text-5xl font-sans font-black tracking-tight text-white"
             id="experience-heading"
           >
-            Milestones of Excellence<span className="text-[#8B5CF6]">.</span>
+            Technical Experience
           </motion.h2>
         </div>
 

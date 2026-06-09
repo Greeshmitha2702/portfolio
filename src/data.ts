@@ -45,38 +45,31 @@ export const SKILLS_DATA = [
 export const PROJECTS_DATA = [
   {
     id: '1',
-    title: 'Interview Preparation Hub',
+    title: 'Banking simulator',
     description:
-      'A centralized platform for students to prepare for technical interviews with curated resources, coding sheets, company-wise preparation tracks, and progress management.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80',
+    'A modular banking management system developed using Core Java, JDBC, and SQLite to simulate real-world banking operations such as account creation, deposits, withdrawals, and transaction history management. The project focused on object-oriented design, ACID-compliant database transactions, exception handling, and structured backend workflows to improve reliability and maintainability.',
+    tags: ['Java', 'JDBC', 'SQLite', 'OOP'],
+    githubUrl: 'https://github.com/Greeshmitha2702/BankingSimulator-Java',
+    imageUrl: 'public/bank.jpg',
     featured: true,
   },
   {
     id: '2',
-    title: 'AI Task Prioritizer Agent',
-    description:
-      'An AI-powered productivity assistant that helps students prioritize tasks based on available time, energy levels, and urgency.',
-    tags: ['AI', 'React', 'TypeScript', 'Productivity'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=80',
+    title: 'Opensource Voice AI',
+    description: 'A scalable AI-powered voice processing application developed using Python and MongoDB that enables real-time text-to-speech generation and audio processing workflows. The project focused on asynchronous backend processing, API integration, modular architecture, and low-latency response handling while improving reliability through testing and structured debugging practices.',
+    tags: ['Python', 'React', 'TTS', 'flask'],
+    githubUrl: 'https://github.com/Greeshmitha2702/opensource-voice-ai',
+    liveUrl: 'https://opensource-voice-ai.onrender.com/',
+    imageUrl: 'public/voice.jpg',
     featured: true,
   },
   {
     id: '3',
-    title: 'Weather Modeling System',
+    title: 'Prajna AI Companion',
     description:
-      'A software engineering academic project implementing Waterfall, Agile, and Iterative methodologies for weather prediction and analysis workflows.',
-    tags: ['Java', 'Software Engineering', 'System Design'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    imageUrl:
-      'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1000&q=80',
+'An AI-powered faculty management platform being developed using AWS serverless architecture and modular backend design principles to streamline faculty data workflows and management operations. The project involves REST APIs, asynchronous processing, JWT authentication, DynamoDB schema planning, and AWS EventBridge-based event-driven integration concepts to build scalable and reliable backend systems in a collaborative SDLC environment.',    
+    tags: ['AWS', 'TypeScript', 'Serverless'],    
+    imageUrl: 'public/faculty.jpg',
     featured: false,
   },
 ];
@@ -84,23 +77,31 @@ export const PROJECTS_DATA = [
 export const EXPERIENCE_DATA = [
   {
     id: 'exp1',
-    role: 'Backend Lead',
+    role: 'President',
     organization: 'GitHub Club',
-    duration: '2025 - Present',
+    duration: '2024 - Present',
     description: [
-      'Leading backend development initiatives and collaborating with team members on scalable web application architecture.',
-      'Working on API design, project planning, and technical collaboration within student developer communities.',
+      'Leading a technical student community by organizing coding events, technical workshops, and collaborative development initiatives.'
     ],
     isLeadership: true,
   },
   {
     id: 'exp2',
-    role: 'AI & Software Engineering Intern',
-    organization: 'Virtual Internship Programs',
-    duration: '2025',
+    role: 'Prajna AI companion',
+    organization: 'GITAM University',
+    duration: '2026',
     description: [
-      'Participated in AI/ML and software engineering virtual internships focused on real-world development workflows.',
-      'Built projects, improved technical problem solving, and explored cloud-based deployment workflows.',
+      'Leading faculty data modules in a 24-member engineering project using AWS serverless architecture, REST APIs, and modular backend design.'
+    ],
+    isLeadership: true,
+  },
+  {
+    id: 'exp3',
+    role: 'GSSoC(Girlscript Summer of Code) Contributor and Ambassador',
+    organization: 'Girlscript Foundation',
+    duration: '2026',
+    description: [
+      'An open-source contribution program focused on collaborative software development, community engagement, and technical learning. Contributed to open-source initiatives through issue resolution, feature enhancements, and collaborative development workflows while supporting community-driven technical activities as an Ambassador and Contributor.'
     ],
     isLeadership: false,
   },

@@ -30,17 +30,7 @@ export default function Resume() {
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center justify-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#38bdf8]"
-          >
-            <span className="w-8 h-[1px] bg-[#38bdf8]" />
-            <span>05 . Credentials</span>
-            <span className="w-8 h-[1px] bg-[#38bdf8]" />
-          </motion.div>
+    
           <motion.h2
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,11 +39,10 @@ export default function Resume() {
             className="text-3xl sm:text-5xl font-sans font-black tracking-tight text-white mb-4"
             id="resume-heading"
           >
-            Get My Resume<span className="text-[#38bdf8]">.</span>
+            Get My Resume
           </motion.h2>
           <p className="text-[#94A3B8] text-sm sm:text-base font-sans max-w-xl mx-auto leading-relaxed">
-            Interested in working together? Download the print-ready PDF version of my curriculum vitae containing my detailed technical experience, education, and skillset.
-          </p>
+            Interested in collaborating or exploring opportunities? Download my resume to learn more about my technical skills, projects, experience, and academic background.          </p>
         </div>
 
         {/* High-Fidelity Interactive Showcase Card */}
@@ -155,7 +144,7 @@ export default function Resume() {
             </div>
             <div className="text-center">
               <span className="block text-white text-xs font-bold uppercase tracking-wider mb-1 font-mono">Focus</span>
-              <span className="text-slate-400 text-xs font-sans">Full Stack & Backend</span>
+              <span className="text-slate-400 text-xs font-sans">Full Stack</span>
             </div>
             <div className="text-center sm:text-right">
               <span className="block text-white text-xs font-bold uppercase tracking-wider mb-1 font-mono">Status</span>

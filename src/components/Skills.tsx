@@ -84,16 +84,6 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
-            className="flex items-center gap-2 mb-2 text-xs font-semibold uppercase tracking-widest text-[#8B5CF6]"
-          >
-            <span className="w-8 h-[1px] bg-[#8B5CF6]" />
-            <span>02 . Stack</span>
-          </motion.div>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
             <motion.h2
               initial={{ opacity: 0, y: 15 }}
@@ -103,7 +93,7 @@ export default function Skills() {
               className="text-3xl sm:text-5xl font-sans font-black tracking-tight text-white mb-0"
               id="skills-heading"
             >
-              Engineered Capabilities<span className="text-[#8B5CF6]">.</span>
+              Technical Stack
             </motion.h2>
 
             {/* Cinematic filter controls */}
