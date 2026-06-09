@@ -50,7 +50,7 @@ export const PROJECTS_DATA = [
     'A modular banking management system developed using Core Java, JDBC, and SQLite to simulate real-world banking operations such as account creation, deposits, withdrawals, and transaction history management. The project focused on object-oriented design, ACID-compliant database transactions, exception handling, and structured backend workflows to improve reliability and maintainability.',
     tags: ['Java', 'JDBC', 'SQLite', 'OOP'],
     githubUrl: 'https://github.com/Greeshmitha2702/BankingSimulator-Java',
-    imageUrl: 'public/bank.jpg',
+    imageUrl: '/bank.jpg',
     featured: true,
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS_DATA = [
     tags: ['Python', 'React', 'TTS', 'flask'],
     githubUrl: 'https://github.com/Greeshmitha2702/opensource-voice-ai',
     liveUrl: 'https://opensource-voice-ai.onrender.com/',
-    imageUrl: 'public/voice.jpg',
+    imageUrl: '/voice.jpg',
     featured: true,
   },
   {
@@ -69,7 +69,7 @@ export const PROJECTS_DATA = [
     description:
 'An AI-powered faculty management platform being developed using AWS serverless architecture and modular backend design principles to streamline faculty data workflows and management operations. The project involves REST APIs, asynchronous processing, JWT authentication, DynamoDB schema planning, and AWS EventBridge-based event-driven integration concepts to build scalable and reliable backend systems in a collaborative SDLC environment.',    
     tags: ['AWS', 'TypeScript', 'Serverless'],    
-    imageUrl: 'public/faculty.jpg',
+    imageUrl: '/faculty.jpg',
     featured: false,
   },
 ];

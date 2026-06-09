@@ -59,7 +59,7 @@ export default function About() {
 
               {/* Workstation photo container */}
               <div className="relative aspect-[4/5] bg-[#1a1a1e] overflow-hidden">
-                <img src="public/Greeshmitha.jpg"
+                <img src="/Greeshmitha.jpg"
                   alt="Greeshmitha - Full Stack developer portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale brightness-90 contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
