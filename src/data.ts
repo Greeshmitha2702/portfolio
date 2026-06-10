@@ -1,10 +1,10 @@
 export const PERSONAL_INFO = {
   name: 'Greeshmitha Bingumalla',
-  title: 'Full Stack Developer & Backend Engineering Enthusiast',
+  title: 'Aspiring Full Stack Developer',
   tagline: 'Building scalable web applications with clean UI and strong backend systems.',
   subtagline:
     'Focused on full stack development, DSA, and real-world software engineering projects with modern technologies.',
-  bio:'I am a Computer Science student passionate about building impactful software products and continuously improving my development skills. I enjoy working on full stack applications, backend systems, and solving real-world problems through data structures and algorithms. Currently, I am exploring scalable architectures, modern web technologies, and AI-powered applications while actively contributing to technical communities and internships.',
+  bio:'I am a Computer Science student passionate about building impactful software products and continuously improving my development skills. I enjoy working on full stack applications and solving real-world problems through data structures and algorithms. Currently, I am exploring scalable architectures, modern web technologies, and AI-powered applications while actively contributing to technical communities and internships.',
   email: 'bingumallagreeshmitha@gmail.com',
   location: 'Andhra Pradesh, India',
   github: 'https://github.com/Greeshmitha2702',

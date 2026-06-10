@@ -69,7 +69,7 @@ export default function About() {
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-sm bg-[#0B1120]/85 backdrop-blur-md border border-white/10 text-xs text-white/95">
                   <div className="flex items-center gap-2 font-mono font-bold text-[#8B5CF6] mb-1 uppercase tracking-wider">
                     <Award className="w-3.5 h-3.5" />
-                    <span>Focus Area: Full Stack & Backend Development</span>
+                    <span>Focus Area: Full Stack Development</span>
                   </div>
                   <p className="text-[#94A3B8] font-sans">
   Building scalable web applications with clean frontend experiences, efficient backend systems, and modern development practices.                  </p>
@@ -88,7 +88,7 @@ export default function About() {
               className="space-y-6 text-[#94A3B8] leading-relaxed text-base"
             >
               <h3 className="text-white text-xl font-display font-bold tracking-tight">
-                Hey, I'm {PERSONAL_INFO.name}. I build scalable full stack applications and modern digital experiences.
+                Hey, I'm {PERSONAL_INFO.name}. Exploring full stack development through real-world projects and modern web experiences.
               </h3>
               <p>
                 {PERSONAL_INFO.bio}
