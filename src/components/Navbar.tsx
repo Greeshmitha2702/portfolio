@@ -29,19 +29,33 @@ export default function Navbar({ activeSection }: NavbarProps) {
   }, []);
 
   const handleNavClick = (id: string) => {
-    setIsOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80; // height of navbar
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    const isMobileMenuOpen = isOpen;
+    if (isMobileMenuOpen) {
+      setIsOpen(false);
+    }
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
+    const performScroll = () => {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80; // height of navbar
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      // Delay the scroll slightly to allow the mobile menu close transition
+      // to progress, preventing the mobile browser from cancelling the smooth scroll.
+      setTimeout(performScroll, 200);
+    } else {
+      performScroll();
     }
   };
 
