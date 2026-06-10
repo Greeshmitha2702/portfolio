@@ -79,7 +79,7 @@ export const EXPERIENCE_DATA = [
     id: 'exp1',
     role: 'President',
     organization: 'GitHub Club',
-    duration: '2024 - Present',
+    duration: 'Oct 2024 - Present',
     description: [
       'Leading a technical student community by organizing coding events, technical workshops, and collaborative development initiatives.'
     ],
@@ -87,14 +87,15 @@ export const EXPERIENCE_DATA = [
   },
   {
     id: 'exp2',
-    role: 'Prajna AI companion',
-    organization: 'GITAM University',
-    duration: '2026',
+    role: 'Intern',
+    organization: 'Infosys Springboard Virtual Internship 6.0',
+    duration: 'Sep 2025 - Nov 2025',
     description: [
-      'Leading faculty data modules in a 24-member engineering project using AWS serverless architecture, REST APIs, and modular backend design.'
+      'Completed a virtual internship focused on Core Java, JDBC, and backend development fundamentals. Built a CLI-based Banking Simulator application implementing OOP concepts, CRUD operations, database connectivity, and transaction management using JDBC. Gained hands-on experience in SQL integration, exception handling, debugging, and modular application design practices.'
     ],
-    isLeadership: true,
+    isLeadership: false,
   },
+  
   {
     id: 'exp3',
     role: 'GSSoC(Girlscript Summer of Code) Contributor and Ambassador',
@@ -105,6 +106,16 @@ export const EXPERIENCE_DATA = [
     ],
     isLeadership: false,
   },
+  {
+    id: 'exp4',
+    role: 'Prajna AI companion',
+    organization: 'GITAM University',
+    duration: '2026',
+    description: [
+      'Leading faculty data modules in a 24-member engineering project using AWS serverless architecture, REST APIs, and modular backend design.'
+    ],
+    isLeadership: true,
+  }
 ];
 
 export const EDUCATION_DATA = [
