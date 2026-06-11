@@ -22,7 +22,6 @@ export const SKILLS_DATA = [
   { name: 'React / Next.js', category: 'frontend', iconName: 'Cpu' },
   { name: 'TypeScript', category: 'frontend', iconName: 'Code' },
   { name: 'HTML / CSS / JavaScript', category: 'frontend', iconName: 'Globe' },
-  { name: 'JavaScript', category: 'frontend', iconName: 'Code' },
 
   { name: 'FastAPI', category: 'backend', iconName: 'Server' },
   { name: 'REST APIs', category: 'backend', iconName: 'Share2' },
