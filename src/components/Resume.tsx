@@ -85,7 +85,7 @@ export default function Resume() {
 
           <div className="flex flex-col items-center justify-center gap-4">
             <motion.a
-              href="/Greeshmitha-Resume.pdf"
+              href="/Greeshmitha-resume.pdf"
               download="Greeshmitha-Resume.pdf"
               onClick={handleDownloadClick}
               whileHover={{ scale: 1.05 }}
