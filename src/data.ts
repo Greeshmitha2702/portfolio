@@ -34,6 +34,8 @@ export const SKILLS_DATA = [
 
   { name: 'AWS Basics', category: 'devops', iconName: 'Cloud' },
   { name: 'Git & GitHub', category: 'devops', iconName: 'GitBranch' },
+  { name: 'Docker', category: 'devops', iconName: 'Container' },
+  { name: 'Postman', category: 'devops', iconName: 'Send' },
   { name: 'Render Deployment', category: 'devops', iconName: 'ExternalLink' },
   { name: 'API Integration', category: 'devops', iconName: 'CheckCircle' },
 
@@ -46,9 +48,10 @@ export const PROJECTS_DATA = [
     id: '1',
     title: 'Banking simulator',
     description:
-    'A modular banking management system developed using Core Java, JDBC, and SQLite to simulate real-world banking operations such as account creation, deposits, withdrawals, and transaction history management. The project focused on object-oriented design, ACID-compliant database transactions, exception handling, and structured backend workflows to improve reliability and maintainability.',
-    tags: ['Java', 'JDBC', 'SQLite', 'OOP'],
+      'A full-stack banking simulator application built with Spring Boot and React to simulate real-world banking operations such as user registration, account creation, secure deposits, withdrawals, fund transfers, and transaction history tracking. The project leverages RESTful APIs, transaction management for database consistency, and modular backend architecture to ensure reliable performance.',
+    tags: ['Spring Boot', 'React', 'Java', 'REST APIs', 'SQL'],
     githubUrl: 'https://github.com/Greeshmitha2702/BankingSimulator-Java',
+    liveUrl: 'https://banking-simulator-java.vercel.app/',
     imageUrl: '/bank.jpg',
     featured: true,
   },
@@ -66,10 +69,22 @@ export const PROJECTS_DATA = [
     id: '3',
     title: 'Prajna AI Companion',
     description:
-'An AI-powered faculty management platform being developed using AWS serverless architecture and modular backend design principles to streamline faculty data workflows and management operations. The project involves REST APIs, asynchronous processing, JWT authentication, DynamoDB schema planning, and AWS EventBridge-based event-driven integration concepts to build scalable and reliable backend systems in a collaborative SDLC environment.',    
+      'An AI-powered faculty management platform being developed using AWS serverless architecture and modular backend design principles to streamline faculty data workflows and management operations. The project involves REST APIs, asynchronous processing, JWT authentication, DynamoDB schema planning, and AWS EventBridge-based event-driven integration concepts to build scalable and reliable backend systems in a collaborative SDLC environment.',    
     tags: ['AWS', 'TypeScript', 'Serverless'],    
+    githubUrl: 'https://github.com/Prajna-AI-Gitam/prajna-faculty-data',
     imageUrl: '/faculty.jpg',
     featured: false,
+  },
+  {
+    id: '4',
+    title: 'Job Tracker',
+    description:
+      'A full-stack job application tracker developed using Spring Boot and React to help job seekers organize, manage, and monitor their application pipeline. Features tracking of application statuses (Applied, Interviewing, Offered, Rejected), recruiter contacts, interview dates, and real-time status updates, backed by secure REST APIs.',
+    tags: ['Spring Boot', 'React', 'Java', 'REST APIs', 'SQL'],
+    githubUrl: 'https://github.com/Greeshmitha2702/job-tracker',
+    liveUrl: 'https://job-tracker-eight-beryl.vercel.app/',
+    imageUrl: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1000&q=80',
+    featured: true,
   },
 ];
 

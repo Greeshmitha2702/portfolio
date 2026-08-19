@@ -20,6 +20,7 @@ import {
   Users,
   Layout,
   Terminal,
+  Send,
 } from 'lucide-react';
 import { SKILLS_DATA } from '../data';
 import { Skill } from '../types';
@@ -44,6 +45,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Eye: Eye,
   Users: Users,
   Layout: Layout,
+  Send: Send,
 };
 
 export default function Skills() {
